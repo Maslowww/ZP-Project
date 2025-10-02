@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+KeyError: (u'hide', u'example')
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 524, in main
+    node()
+  File "renpy/ast.py", line 1960, in execute_init
+    self.call("execute_init")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 274, in call
+    method = registry[name].get(method)
+KeyError: (u'hide', u'example')
+
+Windows-8.1-6.3.9600
+Ren'Py 7.4.4.1439
+Fallen Angel 2.28
+Thu May 20 08:58:37 2021
